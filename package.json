@@ -23,8 +23,7 @@
   "type": "module",
   "main": "index.mjs",
   "files": [
-    "index.mjs",
-    "index.cjs"
+    "index.mjs"
   ],
   "scripts": {
     "clean": "run-p clean:*",
