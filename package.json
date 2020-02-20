@@ -1,6 +1,6 @@
 {
   "name": "import-commonjs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Import CommonJS modules in the safe way",
   "keywords": [
     "cjs",
