@@ -1,5 +1,5 @@
 import test from 'ava'
-import importCommonjs from './index.js'
+import importCommonjs from './index.mjs'
 
 test('main', t => {
   t.is(typeof importCommonjs, 'function')

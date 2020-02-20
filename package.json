@@ -21,9 +21,10 @@
   },
   "sideEffects": false,
   "type": "module",
-  "main": "index.js",
+  "main": "index.mjs",
   "files": [
-    "index.js"
+    "index.mjs",
+    "index.cjs"
   ],
   "scripts": {
     "clean": "run-p clean:*",
