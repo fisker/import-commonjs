@@ -16,6 +16,7 @@ module.exports = {
   rules: {
     'unicorn/import-index': 'off',
     'import/extensions': 'off',
+    'node/no-unsupported-features/node-builtins': 'off',
   },
   plugins: [],
   globals: {},

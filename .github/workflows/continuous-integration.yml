@@ -49,7 +49,11 @@ jobs:
       #     path: dist
 
       - name: Run Test
+        if: matrix.node_version == "13"
         run: yarn test-coverage
+
+      - name: Run Test with --experimental-modules
+        run: yarn test-coverage --node-arguments="--experimental-modules"
 
       - name: Upload Coverage
         uses: coverallsapp/github-action@master
