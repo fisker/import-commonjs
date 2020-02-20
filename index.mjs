@@ -1,7 +1,9 @@
-// eslint-disable-next-line node/no-deprecated-api
-import {createRequire, createRequireFromPath} from 'module'
+import * as module from 'module'
 
-const require = (createRequire || createRequireFromPath)(import.meta.url)
+// eslint-disable-next-line node/no-deprecated-api
+const createRequire = module.createRequire || module.createRequireFromPath
+
+const require = createRequire(import.meta.url)
 
 function load(url) {
   return require(url)

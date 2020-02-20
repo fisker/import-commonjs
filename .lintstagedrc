@@ -4,7 +4,7 @@ package.json:
   - stylelint --fix
 "*.{gql,graphql,htm,html,json,json5,yaml,yml}":
   - prettier --write
-"*.{js,jsx,mjs,vue}":
+"*.{cjs,js,jsx,mjs,vue}":
   - eslint --fix
 "*.{markdown,md}":
   - prettier --write
