@@ -20,7 +20,6 @@ jobs:
         node_version:
           - "13"
           - "12"
-          - "10"
         # exclude:
         #   - os: "macos-latest"
         #     node_version: "12"
@@ -49,7 +48,7 @@ jobs:
       #     path: dist
 
       - name: Run Test
-        if: matrix.node_version == "13"
+        if: matrix.node_version == '13'
         run: yarn test-coverage
 
       - name: Run Test with --experimental-modules
