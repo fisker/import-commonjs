@@ -1,7 +1,7 @@
 import test from 'ava'
 import importCommonjs from './index.mjs'
 
-test('main', t => {
+test('main', (t) => {
   t.is(typeof importCommonjs, 'function')
   t.is(importCommonjs('./fixtures/foo.cjs').name, 'foo')
   t.is(
