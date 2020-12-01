@@ -39,21 +39,13 @@ console.log(require('./foo.cjs'))
 
 ### importCommonjs(url)
 
-Import a `Module` from `url`.
+Filename to be used to construct the require function. Must be a file URL object, file URL string, or absolute path string.
 
-Returns a `Module`.
+Returns [`require` function](https://nodejs.org/api/modules.html#modules_require_id).
 
 #### `url`
 
 Type: `string`
-
-`import.meta.url`
-
-#### `id`
-
-Type: `string`
-
-The module id you want import.
 
 ## Related
 
