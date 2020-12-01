@@ -30,7 +30,8 @@ npm install import-commonjs
 
 ```js
 import importCommonjs from 'import-commonjs'
-console.log(importCommonjs('./foo.cjs'))
+const require = importCommonjs(import.meta.url)
+console.log(require('./foo.cjs'))
 //=> { name: 'foo' }
 ```
 
@@ -46,7 +47,13 @@ Returns a `Module`.
 
 Type: `string`
 
-The module url you want import.
+`import.meta.url`
+
+#### `id`
+
+Type: `string`
+
+The module id you want import.
 
 ## Related
 
